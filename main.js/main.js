@@ -34,19 +34,16 @@ styleBottom.map((element, i) => {
     element.addEventListener("click", () => {
         console.log(element.textContent);
         const styleMusic = [...document.querySelectorAll(".style")];
-        const result = styleMusic.filter((styleMusic) => {
-            if (styleMusic.textContent == element.textContent) {
-
-            } else {
-                let elementFilter = document.createElement('div');
-                elementFilter = cards[i]
-                box_2.appendChild(elementFilter)
-            }
+        const result = styleMusic.filter(() => {
 
 
+
+            console.log(styleMusic)
+            let elementFilter = document.createElement('div');
+            elementFilter = cards[i]
+            box_2.appendChild(elementFilter)
 
         })
-
     })
 })
 
